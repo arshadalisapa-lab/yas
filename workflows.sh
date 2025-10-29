@@ -3,6 +3,8 @@
 WORKFLOW_TEMPLATE=$(cat .github/workflow-template.yaml)
 SERVICES=(product pricing media storefront backoffice-bff)
 
+echo " file generating"
+
 for SERVICE_NAME in "${SERVICES[@]}"; do
     echo "Generating workflow for ${SERVICE_NAME} service"
 
